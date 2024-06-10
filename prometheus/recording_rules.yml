@@ -1,0 +1,5 @@
+groups:
+  - name: example_recording_rules
+    rules:
+      - record: my_incoming_network_traffic
+        expr: irate(node_network_receive_bytes_total{job="node-explorer"}[5m])*8

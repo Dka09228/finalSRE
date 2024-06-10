@@ -1,0 +1,17 @@
+{
+	"ulid": "01J01RBA25ARG0KPXV78Q7THEP",
+	"minTime": 1718035203640,
+	"maxTime": 1718042400000,
+	"stats": {
+		"numSamples": 1226400,
+		"numSeries": 869,
+		"numChunks": 10223
+	},
+	"compaction": {
+		"level": 1,
+		"sources": [
+			"01J01RBA25ARG0KPXV78Q7THEP"
+		]
+	},
+	"version": 1
+}

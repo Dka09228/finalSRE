@@ -21,6 +21,10 @@ WORKDIR /app
 # The default value of 0 just installs the demo for running.
 ARG editable=0
 
+RUN pip3 install -U pip
+RUN pip3 install markupsafe==2.0.1
+RUN pip install django_prometheus
+
 RUN if [ "$editable" -eq 1 ]; then pip3 install -r requirements-tests.txt && python3 setup.py build_resources; else pip3 install shuup; fi
 
 RUN python3 -m shuup_workbench migrate
